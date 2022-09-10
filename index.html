@@ -11,7 +11,7 @@
      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
      <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-     <link rel="stylesheet" href="css/styles.css">
+     <link rel="stylesheet" href="css/styledByScss.css">
 
     <title>Ristorante Con Fusion</title>
 
@@ -32,7 +32,7 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a class="pointer" data-toggle="modal" data-target="#loginModal">
+                    <a id="login" class="pointer">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
 
@@ -97,8 +97,7 @@
                     <img src="img/logo.png" class="img-fluid" alt="Logo">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                   <a role="button" class="btn btn-block bg-warning text-dark" data-toggle="modal" data-target="#reserveModal"
-                   ><strong>Reserve Table</strong></a>
+                   <a id="resBtn" role="button" class="btn btn-block bg-warning text-dark" ><strong>Reserve Table</strong></a>
 
                 
                    <!-- data-toggle="tooltip" data-html="true"
@@ -400,7 +399,7 @@
      </div> -->
  </div>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="row">             
                 <div class="col-4 col-sm-2 offset-1">
@@ -475,6 +474,18 @@
             });
            
         });
+
+        $(document).ready(function(){
+            $('#resBtn').click(function(){
+                $('#reserveModal').modal('toggle')
+            })
+        })
+
+        $(document).ready(function(){
+            $('#login').click(function(){
+                $('#loginModal').modal('toggle')
+            })
+        })
     </script>
 
 </body>
