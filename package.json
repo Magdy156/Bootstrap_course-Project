@@ -20,6 +20,9 @@
   "license": "ISC",
   "devDependencies": {
     "cssmin": "^0.4.3",
+    "gulp": "^4.0.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-sass": "^5.1.0",
     "htmlmin": "^0.0.7",
     "lite-server": "^2.3.0",
     "node-sass": "^7.0.3",
@@ -27,6 +30,8 @@
     "onchange": "^3.3.0",
     "parallelshell": "^3.0.2",
     "rimraf": "^3.0.2",
+    "sass": "^1.54.9",
+    "static-server": "^2.2.1",
     "uglifyjs": "^2.4.11",
     "usemin-cli": "^0.5.1"
   },
